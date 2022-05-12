@@ -121,7 +121,7 @@ SELECT columna1, SUM(Columna2) FROM nombre_tabla GROUP BY columna1
 ```
 Sintaxis:     
 
-SELECT columna1, SUM(Columna2) FROM nombre_tabla GROUP BY columna1 HAVING (condición de función aritmética)
+SELECT col1, SUM(Col2) FROM name_table GROUP BY col1 HAVING (condición de función aritmética)
  
 * El uso del GROUP BY es Opcional
 
