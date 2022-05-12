@@ -5,7 +5,7 @@
 OBJETIVO: 
 ✓ Realizar consultas avanzadas (Multitablas, Combinadas, Subconsultas, etc) y funciones de agregado del lenguaje SQL utilizando SQL Server  
  
-PARTE 1. SENTENCIAS SQL PARA CONSULTA DE DATOS 
+### PARTE 1. SENTENCIAS SQL PARA CONSULTA DE DATOS 
 
 A continuación encontrara un listado de las principales sentencias SQL utilizadas para realizar diferentes tipos de consulta sobre una base de datos:
 
