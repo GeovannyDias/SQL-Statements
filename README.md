@@ -9,40 +9,40 @@ OBJETIVO:
 
 A continuación encontrara un listado de las principales sentencias SQL utilizadas para realizar diferentes tipos de consulta sobre una base de datos:
 
-```
 1.	SELECT; La palabra clave SELECT nos permite tomar toda la información de una o varias  columnas de una tabla 
  
+```
 Sintaxis: SELECT columna1,columna2,…ColumnaN FROM nombre_tabla 
 ```
-``` 
 2.	DISTINCT: La palabra clave DISTINCT Permite seleccionar valores de una tabla mostrándolos una sola vez, inclusive aquellos que estén repetidos 
  
+``` 
 Sintaxis: SELECT DISTINCT columna1,columna2,…ColumnaN FROM nombre_tabla 
-```
 ```
 3.	WHERE: La palabra clave WHERE se utiliza para seleccionar condicionalmente los datos de una tabla 
  
-Sintaxis: SELECT columna1,columna2,…ColumnaN FROM nombre_tabla WHERE Condición 
 ```
+Sintaxis: SELECT columna1,columna2,…ColumnaN FROM nombre_tabla WHERE Condición 
 ```
 4.	AND/OR: La palabra clave WHERE selecciona datos condicionalmente desde una tabla. Esta condición puede ser una condición simple o puede ser una condición compuesta. Las condiciones compuestas están formadas por múltiples condiciones simples conectadas por AND u OR. No hay límites en el número de condiciones simples que pueden presentarse en una sola instrucción SQL. 
  
+```
 Sintaxis:     SELECT columna1,columna2,…ColumnaN FROM nombre_tabla  
 WHERE "condición simple" {[AND|OR] "condición simple"}… 
 ```
-```
 5.	IN: La palabra clave IN Permite seleccionar los registros que contengan unos valores (varios) en un mismo campo o columna 
  
+```
 Sintaxis:     SELECT columna1,columna2,…ColumnaN FROM nombre_tabla WHERE  nombre_columna IN ('valor1', 'valor2', ...) 
-``` 
 ``` 
 6.	BETWEEN: La palabra clave BETWEEN permite la selección de registros que de un rango de valores 
  
+``` 
 Sintaxis:      SELECT columna1,columna2,…ColumnaN FROM nombre_tabla  WHERE nombre_columna BETWEEN 'valor1' AND 'valor2' 
-```
 ```
 7.	LIKE: La palabra clave LIKE se utiliza en la cláusula WHERE. Básicamente, LIKE permite hacer una búsqueda basada en un patrón en vez de especificar exactamente lo que se desea  
  
+```
 Sintaxis:     SELECT columna1,columna2,…ColumnaN FROM nombre_tabla  
 WHERE nombre_columna LiKE {patrón} 
 El {patrón} que acompaña la cláusula LIKE consiste en comodines tales como: 
@@ -50,60 +50,60 @@ El {patrón} que acompaña la cláusula LIKE consiste en comodines tales como:
 ✓	'%XYZ': Selecciona todos los datos que terminan con 'XYZ'. Por ejemplo, 'WXYZ' y 'ZZXYZ' ambas deberían satisfacer la condición. 
 ✓	'%AN%': Selecciona todos los datos que contienen el patrón 'AN' en cualquier lado. Por ejemplo, 'LOS ANGELES' y 'SAN FRANCISCO' ambos deberían satisfacer la condición. 
 ```
-```
 8.	ORDER BY: La palabra clave ORDER BY se utiliza cuando se necesita enumerar el resultado en un orden particular. Esto podría ser en orden ascendente, en orden descendente, o podría basarse en valores de texto 
  
+```
 Sintaxis:     SELECT columna1,columna2,…ColumnaN FROM nombre_tabla  WHERE Condición ORDER BY nombre_columna [ASC/DESC] 
 ``` 
-```
 9.	COUNT: Es una función de SQL Server que permite contar el número de filas en una consulta determinada.  
  
-Sintaxis: SELECT COUNT(nombre_columna) FROM nombre_tabla 
 ```
+Sintaxis: SELECT COUNT(nombre_columna) FROM nombre_tabla 
 ```
 10.	MAX: Es una función de SQL Server que permite encontrar el número mayor en una columna determinada. 
  
-Sintaxis: SELECT MAX(nombre_columna) FROM nombre_tabla 
 ```
+Sintaxis: SELECT MAX(nombre_columna) FROM nombre_tabla 
 ```
 11.	MIN: Es una función de SQL Server que permite encontrar el número menor en una columna determinada. 
  
+```
 Sintaxis: SELECT MIN(nombre_columna) FROM nombre_tabla 
-``` 
 ``` 
 12.	SUM: Es una función de SQL Server que permite realizar la suma de todos los valores almacenados en una determinada columna 
  
+``` 
 Sintaxis: SELECT SUM(nombre_columna) FROM nombre_tabla 
-```
 ```
 13.	AVG: Es una función de SQL Server que permite calcular el Promedio de todos los valores almacenados en una determinada columna 
  
-Sintaxis: SELECT AVG(nombre_columna) FROM nombre_tabla 
 ```
+Sintaxis: SELECT AVG(nombre_columna) FROM nombre_tabla 
 ```
 14.	GROUP BY: La palabra clave GROUP BY se utiliza cuando se selecciona columnas múltiples desde una tabla (o tablas) y aparece al menos un operador aritmético en la instrucción SELECT. Cuando esto sucede, se puede agrupar todas las otras columnas seleccionadas, es decir, todas las columnas excepto aquella(s) que se operan por un operador aritmético. 
  
-Sintaxis: SELECT columna1, SUM(Columna2) FROM nombre_tabla GROUP BY columna1 
 ```
+Sintaxis: SELECT columna1, SUM(Columna2) FROM nombre_tabla GROUP BY columna1 
 ```
 15.	HAVING: La palabra clave HAVING se utiliza para limitar el resultado de una consulta según una determinada condición aplicando generalmente una función de agregado como por ejemplo SUM, AVG, etc 
  
+```
 Sintaxis:     SELECT columna1, SUM(Columna2) FROM nombre_tabla  GROUP BY columna1 HAVING (condición de función aritmética) 
  
 * El uso del GROUP BY es Opcional 
 ** Condición de función aritmética ejemplo:  
 SUM(Columna) > 1000 ó AVG(Columna) < 5000 
 ```
-```
 16.	AS: La palabra Clave AS se utiliza para proporcionarle un Alias o un nombre alternativo a cada una de los valores consultados sean columnas o sea el resultado de una función Aritmética 
  
+```
 Sintaxis:    SELECT columna1 AS OtroNombre1, SUM(Columna2) As Total ,  AVG(Columna3) AS Promedio FROM nombre_tabla 
+```
  
 Para ampliar información y ver ejemplos de cómo aplicar estas sentencias de consulta sql puede ingresar a los siguientes enlaces web 
 ✓	http://deletesql.com/ 
 ✓	http://deletesql.com/viewforum.php?f=5&sid=e67b23df988b4c5c151ad6d1b3c94717 
 
-```
 
 ## PARTE 2. PRODUCTO CARTESIANO, CONSULTAS COMBINADAS Y SUBCONSULTAS SQL
 
