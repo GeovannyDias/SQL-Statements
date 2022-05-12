@@ -121,16 +121,20 @@ SELECT columna1, SUM(Columna2) FROM nombre_tabla GROUP BY columna1
 ```
 Sintaxis:     
 
-SELECT columna1, SUM(Columna2) FROM nombre_tabla  GROUP BY columna1 HAVING (condición de función aritmética) 
+SELECT columna1, SUM(Columna2) FROM nombre_tabla GROUP BY columna1 HAVING (condición de función aritmética)
  
-* El uso del GROUP BY es Opcional 
+* El uso del GROUP BY es Opcional
+
 ** Condición de función aritmética ejemplo:  
+
 SUM(Columna) > 1000 ó AVG(Columna) < 5000 
 ```
 16.	AS: La palabra Clave AS se utiliza para proporcionarle un Alias o un nombre alternativo a cada una de los valores consultados sean columnas o sea el resultado de una función Aritmética 
  
 ```
-Sintaxis:    SELECT columna1 AS OtroNombre1, SUM(Columna2) As Total ,  AVG(Columna3) AS Promedio FROM nombre_tabla 
+Sintaxis:    
+
+SELECT columna1 AS OtroNombre1, SUM(Columna2) As Total, AVG(Columna3) AS Promedio FROM nombre_tabla 
 ```
  
 Para ampliar información y ver ejemplos de cómo aplicar estas sentencias de consulta sql puede ingresar a los siguientes enlaces web 
