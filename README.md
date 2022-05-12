@@ -59,6 +59,7 @@ Sintaxis:
 
 SELECT columna1,columna2,…ColumnaN FROM nombre_tabla
 WHERE nombre_columna LiKE {patrón} 
+
 El {patrón} que acompaña la cláusula LIKE consiste en comodines tales como: 
 
 'ABC%': Selecciona todos los datos que comienzan con 'ABC'. 
