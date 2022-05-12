@@ -61,11 +61,15 @@ SELECT columna1,columna2,…ColumnaN FROM nombre_tabla
 WHERE nombre_columna LiKE {patrón} 
 El {patrón} que acompaña la cláusula LIKE consiste en comodines tales como: 
 
-✓	'ABC%': Selecciona todos los datos que comienzan con 'ABC'. Por ejemplo, 'ABCD' y 'ABCABC' ambas deberían satisfacer la condición. 
+'ABC%': Selecciona todos los datos que comienzan con 'ABC'. 
+Por ejemplo, 'ABCD' y 'ABCABC' ambas deberían satisfacer la condición. 
 
-✓	'%XYZ': Selecciona todos los datos que terminan con 'XYZ'. Por ejemplo, 'WXYZ' y 'ZZXYZ' ambas deberían satisfacer la condición. 
+'%XYZ': Selecciona todos los datos que terminan con 'XYZ'. 
+Por ejemplo, 'WXYZ' y 'ZZXYZ' ambas deberían satisfacer la condición. 
 
-✓	'%AN%': Selecciona todos los datos que contienen el patrón 'AN' en cualquier lado. Por ejemplo, 'LOS ANGELES' y 'SAN FRANCISCO' ambos deberían satisfacer la condición. 
+'%AN%': Selecciona todos los datos que contienen el patrón 'AN' en cualquier lado. 
+Por ejemplo, 'LOS ANGELES' y 'SAN FRANCISCO' ambos deberían satisfacer la condición. 
+
 ```
 8.	ORDER BY: La palabra clave ORDER BY se utiliza cuando se necesita enumerar el resultado en un orden particular. Esto podría ser en orden ascendente, en orden descendente, o podría basarse en valores de texto 
  
@@ -138,8 +142,9 @@ SELECT columna1 AS OtroNombre1, SUM(Columna2) As Total, AVG(Columna3) AS Promedi
 ```
  
 Para ampliar información y ver ejemplos de cómo aplicar estas sentencias de consulta sql puede ingresar a los siguientes enlaces web 
-✓	http://deletesql.com/ 
-✓	http://deletesql.com/viewforum.php?f=5&sid=e67b23df988b4c5c151ad6d1b3c94717 
+* *http://deletesql.com/*
+* *http://deletesql.com/viewforum.php?f=5&sid=e67b23df988b4c5c151ad6d1b3c94717*
+* *https://www.w3schools.com/sql/default.asp*
 
 
 ## PARTE 2. PRODUCTO CARTESIANO, CONSULTAS COMBINADAS Y SUBCONSULTAS SQL
