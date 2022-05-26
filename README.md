@@ -302,3 +302,26 @@ Un ejemplo de cómo escribir una consulta avanzada dentro de un Método de una �
      "INNER JOIN Colegios ON Estudiantes.NitColegio = Colegios.NitColegio” 
  ```
 
+# Consultas
+
+## Listar tablas en una base de datos
+
+```
+use WideWorldImporters;
+
+SELECT * FROM information_schema.tables;
+select * from Sales.Invoices;
+select * from Sales.InvoiceLines;
+
+
+SELECT * FROM SYS.tables ORDER BY name;
+
+SELECT B.*, A.* 
+FROM SYS.objects AS A 
+     INNER JOIN SYS.schemas AS B ON(A.schema_id=B.schema_id) 
+WHERE type_desc='USER_TABLE'
+ORDER BY B.name, A.name;
+```
+
+
+
