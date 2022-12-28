@@ -7,5 +7,12 @@ Optimizando consultas en SQL Server #2 - Guia de SQL Server en Español:
 
 https://www.youtube.com/watch?v=NG-bxA93Wn0
 
+Visual Studio Versions:
 
+https://visualstudio.microsoft.com/vs/older-downloads/
+
+Integration Services Extension:
+
+Extensions>Manage Extensions:
+Search: SQL Server Integration Services Projects 2022
 
