@@ -1,0 +1,1131 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/3/2023 3:29:59 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-L1SDHLQ"
+  DTS:CreatorName="DESKTOP-L1SDHLQ\Geo"
+  DTS:DTSID="{1134E885-1A93-4CC8-8383-B6CCBC94AF77}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="30"
+  DTS:VersionGUID="{ADAB5B41-C6C9-465D-AC36-B0A8561FDFA3}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[FFS_FileTest]"
+      DTS:CreationName="FLATFILE"
+      DTS:Description="Data Test - FFS_FileTest"
+      DTS:DTSID="{311682DD-A372-4821-9968-E8CC82798CE6}"
+      DTS:ObjectName="FFS_FileTest">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Developer_Studio\Web\DB\SQL-Statements\ETLs\02IntegrationServicesProject_-ISP-File\CSV\Sample-Spreadsheet-1000-rows-Geo.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Record"
+              DTS:DTSID="{3CD3CFEF-14D8-498A-A605-2407DFEF08EF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="200"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Description"
+              DTS:DTSID="{37054D53-B9F8-4056-8CD9-E76C58C5AF77}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Name"
+              DTS:DTSID="{A1F74598-A60C-47E0-A2F3-FFDB5B7C1F32}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Value1"
+              DTS:DTSID="{A30AD093-2459-4356-AD9F-E0E4C367FD2F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="10"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Value2"
+              DTS:DTSID="{3131D7E6-0661-46A2-9F08-916491651B8C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Country"
+              DTS:DTSID="{1CF9DD0B-85AF-4162-8942-5654713E4366}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Detail"
+              DTS:DTSID="{31EA2074-E9D8-4ED8-8E9A-A9C78C4E4F80}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{3B25689D-90C5-4023-8272-086D2AC8F515}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="ProcessDate">
+      <DTS:VariableValue
+        DTS:DataType="7">1/3/2023 6:31:07 PM</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6E92B699-AC91-43B6-B792-182B778AA937}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="RowsProcessed">
+      <DTS:VariableValue
+        DTS:DataType="3">0</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\EXSQLT Register Ended Process Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{99A81F79-D072-44CD-9A47-95F50726203B}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EXSQLT Register Ended Process Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{76EDAAC4-8199-4978-9AAC-9EF8B8206498}"
+          SQLTask:SqlStatementSource="DECLARE @rows Int&#xA;SET @rows = @_RowsProcessed&#xA;&#xA;UPDATE TBL_RECORD_PROCESS&#xA;SET EndDate=getdate(),&#xA;Result='Exitoso',&#xA;RowsProcessed=@rows&#xA;WHERE &#xA;Package='ETLUploadDimTest' &#xA;AND &#xA;Result='En proceso'" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask">
+          <SQLTask:ParameterBinding
+            SQLTask:ParameterName="@_RowsProcessed"
+            SQLTask:DtsVariableName="User::RowsProcessed"
+            SQLTask:ParameterDirection="Input"
+            SQLTask:DataType="11"
+            SQLTask:ParameterSize="-1" />
+        </SQLTask:SqlTaskData>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\EXSQLT Register Started Process  (Execute SQL Task)"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{C9EBA466-2C3C-473A-8426-8CE2221DE9EC}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="EXSQLT Register Started Process  (Execute SQL Task)"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{76EDAAC4-8199-4978-9AAC-9EF8B8206498}"
+          SQLTask:SqlStatementSource="INSERT INTO TBL_RECORD_PROCESS &#xA;(Process, Package, Result, StartData)&#xA;VALUES (&#xA;'Upload DIM_TEST',&#xA;'ETLUploadDimTest',&#xA;'En proceso',&#xA;getdate())" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Get Process Date  Expression Task (EXT)"
+      DTS:CreationName="Microsoft.ExpressionTask"
+      DTS:Description="Expression Task"
+      DTS:DTSID="{477CEDD3-C0B1-49C5-AB07-D70FC00EC010}"
+      DTS:ExecutableType="Microsoft.ExpressionTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Get Process Date  Expression Task (EXT)"
+      DTS:TaskContact="Expression Task;Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ExpressionTask
+          Expression="@[User::ProcessDate]=GETDATE()" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)"
+      DTS:CreationName="STOCK:SEQUENCE"
+      DTS:Description="Sequence Container"
+      DTS:DTSID="{DDBCA14C-28B3-434B-9F73-856591652977}"
+      DTS:ExecutableType="STOCK:SEQUENCE"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="SC Truncate and Upload DIM_TEST  Sequence Container (SC)">
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{A0861142-1DD0-42F2-8223-CABF915C8C91}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="DTF Upload DIM_TEST (Data Flow Task DFT)"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination)"
+                  componentClassID="Microsoft.ManagedComponentHost"
+                  contactInfo="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;2"
+                  description="Loads data into an ADO.NET-compliant database that uses a database table or view. Load data into a new or existing table. For example, use an ADO.NET provider for ODBC to load data into an ODBC destination."
+                  name="DB Destination (ADO NET Destination)"
+                  usesDispositions="true"
+                  version="2">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="The Destination database table name."
+                      expressionType="Notify"
+                      name="TableOrViewName"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"dbo"."DIM_TEST"</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specify the number of rows per batch. The default is 0 which uses the same size as SSIS internal buffer. "
+                      expressionType="Notify"
+                      name="BatchSize">0</property>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out. A value of 0 indicates infinite time-out. "
+                      expressionType="Notify"
+                      name="CommandTimeout">30</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether to use the SqlBulkCopy interface to improve the performance of bulk insert operations. Only certain providers support this interface."
+                      expressionType="Notify"
+                      name="UseBulkInsertWhenPossible">true</property>
+                    <property
+                      dataType="System.String"
+                      name="UserComponentTypeName">Microsoft.ADONETDestination</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Connections[IDbConnection]"
+                      connectionManagerID="{76EDAAC4-8199-4978-9AAC-9EF8B8206498}:external"
+                      connectionManagerRefId="Project.ConnectionManagers[DESKTOP-L1SDHLQ.Test_DW]"
+                      description="Managed connection manager"
+                      name="IDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input]"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="ADO NET Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].Columns[Record]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Record"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Record]"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Record]" />
+                        <inputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].Columns[Description]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="200"
+                          cachedName="Description"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Description]"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Description]" />
+                        <inputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].Columns[Name]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Name"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Name]"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Name]" />
+                        <inputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].Columns[Value1]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="Value1"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Value1]"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Value1]" />
+                        <inputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].Columns[Value2]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="10"
+                          cachedName="Value2"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Value2]"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Value2]" />
+                        <inputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].Columns[Country]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="Country"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Country]" />
+                        <inputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].Columns[Detail]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="Detail"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Detail]"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Detail]" />
+                        <inputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].Columns[_UploadDate]"
+                          cachedDataType="date"
+                          cachedName="_UploadDate"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[UploadDate]"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Output].Columns[_UploadDate]" />
+                        <inputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].Columns[_StartData]"
+                          cachedDataType="date"
+                          cachedName="_StartData"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[StartData]"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Output].Columns[_StartData]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[TestId]"
+                          dataType="i4"
+                          name="TestId" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Record]"
+                          dataType="i4"
+                          name="Record" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Description]"
+                          dataType="wstr"
+                          length="200"
+                          name="Description" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Name]"
+                          dataType="wstr"
+                          length="100"
+                          name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Value1]"
+                          dataType="wstr"
+                          length="10"
+                          name="Value1" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Value2]"
+                          dataType="wstr"
+                          length="10"
+                          name="Value2" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Country]"
+                          dataType="wstr"
+                          length="50"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[Detail]"
+                          dataType="wstr"
+                          length="100"
+                          name="Detail" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[UploadDate]"
+                          dataType="dbTimeStamp"
+                          name="UploadDate" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[StartData]"
+                          dataType="dbTimeStamp"
+                          name="StartData" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input].ExternalColumns[EndDate]"
+                          dataType="dbTimeStamp"
+                          name="EndDate" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Outputs[ADO NET Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="ADO NET Destination Error Output"
+                      synchronousInputId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Outputs[ADO NET Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Outputs[ADO NET Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Output].Columns[_UploadDate]"
+                          dataType="date"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Output].Columns[_UploadDate]"
+                          name="_UploadDate"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">@[User::ProcessDate]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[User::ProcessDate]</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Output].Columns[_StartData]"
+                          dataType="date"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Output].Columns[_StartData]"
+                          name="_StartData"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">@[User::ProcessDate]</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">@[User::ProcessDate]</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS)"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="1033"
+                  name="File CSV  Flat File Source (FFS)"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">false</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[FFS_FileTest]"
+                      connectionManagerRefId="Package.ConnectionManagers[FFS_FileTest]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Record]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Record]"
+                          length="50"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Record]"
+                          name="Record"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Description]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Description]"
+                          length="200"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Description]"
+                          name="Description"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Name]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Name]"
+                          length="100"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Name]"
+                          name="Name"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Value1]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Value1]"
+                          length="10"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Value1]"
+                          name="Value1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Value2]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Value2]"
+                          length="10"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Value2]"
+                          name="Value2"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          length="50"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Country]"
+                          name="Country"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Detail]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Detail]"
+                          length="100"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].Columns[Detail]"
+                          name="Detail"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Record]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Record" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Description]"
+                          codePage="1252"
+                          dataType="str"
+                          length="200"
+                          name="Description" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Name]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Name" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Value1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="Value1" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Value2]"
+                          codePage="1252"
+                          dataType="str"
+                          length="10"
+                          name="Value2" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Country]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="Country" />
+                        <externalMetadataColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output].ExternalColumns[Detail]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="Detail" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Row Count"
+                  componentClassID="Microsoft.RowCount"
+                  contactInfo="Row Count;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Counts rows as they pass through a data flow. For example, use the number of rows processed to determine whether or not to perform cleanup operations, or update text in an e-mail message to communicate processing status."
+                  name="Row Count">
+                  <properties>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable to hold the row count."
+                      name="VariableName">User::RowsProcessed</property>
+                  </properties>
+                  <inputs>
+                    <input
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Row Count.Inputs[Row Count Input 1]"
+                      hasSideEffects="true"
+                      name="Row Count Input 1">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Row Count.Outputs[Row Count Output 1]"
+                      name="Row Count Output 1"
+                      synchronousInputId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Row Count.Inputs[Row Count Input 1]">
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT).Paths[Derived Column Output]"
+                  endId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Row Count.Inputs[Row Count Input 1]"
+                  name="Derived Column Output"
+                  startId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT).Paths[Flat File Source Output]"
+                  endId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column.Inputs[Derived Column Input]"
+                  name="Flat File Source Output"
+                  startId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS).Outputs[Flat File Source Output]" />
+                <path
+                  refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT).Paths[Row Count Output 1]"
+                  endId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination).Inputs[ADO NET Destination Input]"
+                  name="Row Count Output 1"
+                  startId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Row Count.Outputs[Row Count Output 1]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+        <DTS:Executable
+          DTS:refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\Truncate DIM_TEST (Execute SQL Task)"
+          DTS:CreationName="Microsoft.ExecuteSQLTask"
+          DTS:Description="Execute SQL Task"
+          DTS:DTSID="{397D8156-BF75-486F-9FAE-548CA4A2DC62}"
+          DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="Truncate DIM_TEST (Execute SQL Task)"
+          DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+          DTS:ThreadHint="0">
+          <DTS:Variables />
+          <DTS:ObjectData>
+            <SQLTask:SqlTaskData
+              SQLTask:Connection="{76EDAAC4-8199-4978-9AAC-9EF8B8206498}"
+              SQLTask:SqlStatementSource="TRUNCATE TABLE DIM_TEST" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:PrecedenceConstraints>
+        <DTS:PrecedenceConstraint
+          DTS:refId="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC).PrecedenceConstraints[Constraint]"
+          DTS:CreationName=""
+          DTS:DTSID="{9B860A72-E312-4345-B929-83C4C364441C}"
+          DTS:From="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\Truncate DIM_TEST (Execute SQL Task)"
+          DTS:LogicalAnd="True"
+          DTS:ObjectName="Constraint"
+          DTS:To="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)" />
+      </DTS:PrecedenceConstraints>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{CA98CBFB-CF0A-4107-943F-48D5BE7554A8}"
+      DTS:From="Package\Get Process Date  Expression Task (EXT)"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
+      DTS:CreationName=""
+      DTS:DTSID="{74CE742F-BD26-414F-97EF-7D6282DCA196}"
+      DTS:From="Package\EXSQLT Register Started Process  (Execute SQL Task)"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 1"
+      DTS:To="Package\Get Process Date  Expression Task (EXT)" />
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
+      DTS:CreationName=""
+      DTS:DTSID="{187168B1-797F-4423-A0FD-D3260B4DB2A9}"
+      DTS:From="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint 2"
+      DTS:To="Package\EXSQLT Register Ended Process Execute SQL Task" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="323.2,41.6"
+          Id="Package\EXSQLT Register Ended Process Execute SQL Task"
+          TopLeft="347.499981013438,552.066662899985" />
+        <NodeLayout
+          Size="336.8,41.6"
+          Id="Package\EXSQLT Register Started Process  (Execute SQL Task)"
+          TopLeft="340.833314711022,0.866666588319667" />
+        <NodeLayout
+          Size="272.8,41.6"
+          Id="Package\Get Process Date  Expression Task (EXT)"
+          TopLeft="374.999979510904,99.6666659735972" />
+        <NodeLayout
+          Size="293.6,41.6"
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)"
+          TopLeft="43.7999762326488,141.26666423791" />
+        <NodeLayout
+          Size="269.6,41.6"
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\Truncate DIM_TEST (Execute SQL Task)"
+          TopLeft="52.9666423984711,36.3999983004729" />
+        <EdgeLayout
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC).PrecedenceConstraints[Constraint]"
+          TopLeft="189.18330931556,77.9999983004729">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63.2666659374369"
+              Start="0,0"
+              End="0,55.7666659374369">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.7666659374369" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="357.6,237.6"
+          Size="357.6,280.8"
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)"
+          TopLeft="331.6666485452,214.933331838714" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="510.933314028052,141.266665973597">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,73.6666658651168"
+              Start="0,0"
+              End="0,66.1666658651168">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,66.1666658651168" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 1]"
+          TopLeft="510.316647110963,42.4666665883197">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,57.1999993852775"
+              Start="0,0"
+              End="0,49.6999993852775">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.6999993852775" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="509.783314779319,495.733331838714">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56.333331061271"
+              Start="0,0"
+              End="0,48.833331061271">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.833331061271" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="152.8,41.6"
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Derived Column"
+          TopLeft="469.999974320334,89.2666660459174" />
+        <NodeLayout
+          Size="227.2,41.6"
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\File CSV  Flat File Source (FFS)"
+          TopLeft="183.333323316442,16.4666665521595" />
+        <NodeLayout
+          Size="258.4,41.6"
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination)"
+          TopLeft="180.833323453036,299.866664581431" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\Row Count"
+          TopLeft="194.99998934567,151.466665847037" />
+        <EdgeLayout
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT).Paths[Row Count Output 1]"
+          TopLeft="259.79998934567,193.066665847037">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="50.2333341073656,106.799998734395"
+              Start="0,0"
+              End="50.2333341073656,99.2999987343947">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,49.3999993671974" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,49.3999993671974"
+                    Point2="0,53.3999993671974"
+                    Point3="4,53.3999993671974" />
+                  <mssgle:LineSegment
+                    End="46.2333341073656,53.3999993671974" />
+                  <mssgle:CubicBezierSegment
+                    Point1="46.2333341073656,53.3999993671974"
+                    Point2="50.2333341073656,53.3999993671974"
+                    Point3="50.2333341073656,57.3999993671974" />
+                  <mssgle:LineSegment
+                    End="50.2333341073656,99.2999987343947" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT).Paths[Flat File Source Output]"
+          TopLeft="296.933323316442,58.0666665521595">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="249.466651003892,31.199999493758"
+              Start="0,0"
+              End="249.466651003892,23.699999493758">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,11.599999746879" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,11.599999746879"
+                    Point2="0,15.599999746879"
+                    Point3="4,15.599999746879" />
+                  <mssgle:LineSegment
+                    End="245.466651003892,15.599999746879" />
+                  <mssgle:CubicBezierSegment
+                    Point1="245.466651003892,15.599999746879"
+                    Point2="249.466651003892,15.599999746879"
+                    Point3="249.466651003892,19.599999746879" />
+                  <mssgle:LineSegment
+                    End="249.466651003892,23.699999493758" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT).Paths[Derived Column Output]"
+          TopLeft="469.999974320334,110.066666045917">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-145.399984974664,62.1999998011193"
+              Start="0,0"
+              End="-137.899984974664,62.1999998011193">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-68.6999924873318,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-68.6999924873318,0"
+                    Point2="-72.6999924873318,0"
+                    Point3="-72.6999924873318,4" />
+                  <mssgle:LineSegment
+                    End="-72.6999924873318,58.1999998011193" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-72.6999924873318,58.1999998011193"
+                    Point2="-72.6999924873318,62.1999998011193"
+                    Point3="-76.6999924873318,62.1999998011193" />
+                  <mssgle:LineSegment
+                    End="-137.899984974664,62.1999998011193" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\SC Truncate and Upload DIM_TEST  Sequence Container (SC)\DTF Upload DIM_TEST (Data Flow Task DFT)\DB Destination (ADO NET Destination)">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
