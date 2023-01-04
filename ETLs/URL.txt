@@ -1,0 +1,14 @@
+
+ETL Básica Control Flow y Precedencia:
+https://www.youtube.com/watch?v=zQojC6qf3U4
+
+ETL Básica con variables y registro del proceso:
+https://www.youtube.com/watch?v=MFCGO0QVaDo
+
+Como Crear una ETL con Visual Studio Comunity 2019:
+https://www.youtube.com/watch?v=JL3e0xA3ESI
+
+Proceso ETL con SQL Server Integration Services | Carga Incremental de Datos:
+https://www.youtube.com/watch?v=5s8XCAAe7E8
+
+

@@ -11,11 +11,21 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="6"
-  DTS:VersionGUID="{975FD936-8A95-4A5B-8798-CBCB97391BF4}">
+  DTS:VersionBuild="8"
+  DTS:VersionGUID="{71D6B34E-5F46-4433-A3E2-2E41101052C5}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:Variables />
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{1FC6A96D-2290-4B16-BAAF-9D0D49D43588}"
+      DTS:IncludeInDebugDump="6789"
+      DTS:Namespace="User"
+      DTS:ObjectName="Variable">
+      <DTS:VariableValue
+        DTS:DataType="7">12/30/2022 10:07:24 PM</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
   <DTS:Executables>
     <DTS:Executable
       DTS:refId="Package\Data Flow Task"
@@ -504,6 +514,24 @@ FROM     Sales.OrderLines</property>
           SQLTask:SqlStatementSource="delete from OrderDetails" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
       </DTS:ObjectData>
     </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Script Task"
+      DTS:CreationName="Microsoft.ScriptTask"
+      DTS:Description="Script Task"
+      DTS:DTSID="{E73A5363-3E21-4379-A179-035B1ACB089F}"
+      DTS:ExecutableType="Microsoft.ScriptTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Script Task"
+      DTS:ThreadHint="1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <ScriptProject
+          Name="ST_230d096f63324699b2ceb4fea708cd30"
+          VSTAMajorVersion="16"
+          VSTAMinorVersion="0"
+          Language="CSharp" />
+      </DTS:ObjectData>
+    </DTS:Executable>
   </DTS:Executables>
   <DTS:PrecedenceConstraints>
     <DTS:PrecedenceConstraint
@@ -557,6 +585,10 @@ FROM     Sales.OrderLines</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="130.4,41.6"
+          Id="Package\Script Task"
+          TopLeft="227.499987569949,322.399997758071" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
@@ -599,7 +631,7 @@ FROM     Sales.OrderLines</property>
     </LayoutInfo>
   </TaskHost>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Desde Origen Poblar OrderDetails (DW)">
+    design-time-name="Package\Data Flow Task\Company_DW OrderDetails Table (ADO NET Destination)">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -607,7 +639,7 @@ FROM     Sales.OrderLines</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Data Flow Task\Company_DW OrderDetails Table (ADO NET Destination)">
+    design-time-name="Package\Data Flow Task\Desde Origen Poblar OrderDetails (DW)">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>

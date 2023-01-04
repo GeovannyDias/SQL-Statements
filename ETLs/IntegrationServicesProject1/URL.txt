@@ -1,0 +1,13 @@
+COURSE:
+
+ETL Básica con variables y registro del proceso
+
+https://www.youtube.com/watch?v=MFCGO0QVaDo
+
+------------------------------------------------
+PARAMETERS:
+**
+MSSQL - SSIS Understanding Input and Output Parameters OLEDB vs ADO* OK-GEO
+https://www.youtube.com/watch?v=kuHfaOp_khc
+
+------------------------------------------------
