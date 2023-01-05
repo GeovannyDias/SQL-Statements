@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "03IntegrationServicesProject-DbToFile", "03IntegrationServicesProject-DbToFile\03IntegrationServicesProject-DbToFile.dtproj", "{EE48039D-7B48-4215-8E7C-468AF7FCE699}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EE48039D-7B48-4215-8E7C-468AF7FCE699}.Development|Default.ActiveCfg = Development
+		{EE48039D-7B48-4215-8E7C-468AF7FCE699}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C9CDEB25-4161-4A24-90B9-FDD9E46752EE}
+	EndGlobalSection
+EndGlobal

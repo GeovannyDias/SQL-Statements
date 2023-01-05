@@ -1,0 +1,15 @@
+VARIABLES:
+
+SourceFolder
+
+"D:\Usuarios\jdiasama\Desktop\ETL\Geo\03IntegrationServicesProject-DbToFile\FileExport"
+
+FileName
+
+(DT_WSTR, 4) DATEPART( "yyyy", GETDATE()) + RIGHT( "0"+ (DT_WSTR, 2) DATEPART( "mm", GETDATE()) , 2) + RIGHT( "0"+ (DT_WSTR, 2) DATEPART( "dd", GETDATE()) , 2)+"_FileExport.csv"
+
+
+SSIS: Export Data to Flat File
+
+https://www.youtube.com/watch?v=RaBFTdmZ7HQ
+
