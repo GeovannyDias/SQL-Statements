@@ -1,0 +1,754 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/5/2023 7:00:26 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="DESKTOP-L1SDHLQ"
+  DTS:CreatorName="DESKTOP-L1SDHLQ\Geo"
+  DTS:DTSID="{025A5CE2-B5DF-4177-A992-956883829BB8}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5035.3"
+  DTS:LocaleID="1033"
+  DTS:ObjectName="Package"
+  DTS:PackageType="5"
+  DTS:VersionBuild="6"
+  DTS:VersionGUID="{33A7A8C6-D9F2-416E-9F35-A5A81B29E3E7}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[File To Export - Flat File Connection Manager (FFCM)]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{54161172-A8A5-4AE0-A493-75DE552B22E1}"
+      DTS:ObjectName="File To Export - Flat File Connection Manager (FFCM)">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::SourceFolder] + "\\" +  @[User::FileName]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="1033"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x003C_none_x003E_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="D:\Developer_Studio\Web\DB\SQL-Statements\ETLs\03IntegrationServicesProject-ISP-ExportFile\File\20230105_ExportedFile.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderLineID"
+              DTS:DTSID="{86E6F83B-CD42-43B9-8AFF-D0794005FB0E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="OrderID"
+              DTS:DTSID="{5F29EE37-E4D7-480A-9913-EEF025A52C98}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StockItemID"
+              DTS:DTSID="{2A5E96C3-D898-4CA1-B1DF-19C33E2CDAA6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Description"
+              DTS:DTSID="{C6AC3B2F-46BC-47AB-989E-511B31CDC616}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PackageTypeID"
+              DTS:DTSID="{E4A8D0A1-7952-462D-9F91-5292887119A7}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="Quantity"
+              DTS:DTSID="{EFC30E55-0580-49CA-AA3F-F6E5460CDB31}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitPrice"
+              DTS:DTSID="{68FB037C-444E-41B3-BCA5-AD6394263958}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="TaxRate"
+              DTS:DTSID="{91F4E796-9080-4BF9-A81B-3BFD2FC01A06}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PickedQuantity"
+              DTS:DTSID="{95495214-B62D-4C15-8377-8853D3DD6E7C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="304"
+              DTS:DataScale="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="PickingCompletedWhen"
+              DTS:DTSID="{D9BC86E1-534C-4B05-982F-7C5EEF0A068B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastEditedBy"
+              DTS:DTSID="{A662F368-2C79-4B3A-BEFD-FD6617342901}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000D__x000A_"
+              DTS:DataType="304"
+              DTS:DataScale="7"
+              DTS:TextQualified="True"
+              DTS:ObjectName="LastEditedWhen"
+              DTS:DTSID="{D5842512-3214-4DF8-868F-BD1662A7EC50}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{634A98A5-F1CD-4089-BBC3-736A022779F6}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="(DT_WSTR, 4) DATEPART( &quot;yyyy&quot;, GETDATE()) + RIGHT( &quot;0&quot;+ (DT_WSTR, 2) DATEPART( &quot;mm&quot;, GETDATE()) , 2) + RIGHT( &quot;0&quot;+ (DT_WSTR, 2) DATEPART( &quot;dd&quot;, GETDATE()) , 2)+&quot;_ExportedFile.csv&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="FileName">
+      <DTS:VariableValue
+        DTS:DataType="8">20230105_ExportedFile.csv</DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{81819B2B-A6F2-45F0-BDA7-EEFFC0058612}"
+      DTS:EvaluateAsExpression="True"
+      DTS:Expression="&quot;D:\\Developer_Studio\\Web\\DB\\SQL-Statements\\ETLs\\03IntegrationServicesProject-ISP-ExportFile\\File&quot;"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="SourceFolder">
+      <DTS:VariableValue
+        DTS:DataType="8">D:\Developer_Studio\Web\DB\SQL-Statements\ETLs\03IntegrationServicesProject-ISP-ExportFile\File</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Export Flat File _ Data Flow Task (DFT)"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{AADFE773-75BB-462F-A040-B929EF31B7DD}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Export Flat File _ Data Flow Task (DFT)"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source"
+              componentClassID="Microsoft.ManagedComponentHost"
+              contactInfo="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server.;Microsoft Corporation; Microsoft SQL Server; © Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="Consumes data from SQL Server, OLE DB, ODBC, or Oracle, using the corresponding .NET Framework data provider. Use a Transact-SQL statement to define the result set. For example, extract data from SQL Server with the .NET Framework data provider for SQL Server."
+              name="DB Connection  _ ADO NET Source"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.String"
+                  description="Specifies the SQL statement used by the component to extract data."
+                  expressionType="Notify"
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">30</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether to allow non-string external columns to be implicitly converted to strings at the output columns."
+                  name="AllowImplicitStringConversion">true</property>
+                <property
+                  dataType="System.String"
+                  description="The Source database table name."
+                  expressionType="Notify"
+                  name="TableOrViewName"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"Sales"."OrderLines"</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specify the mode to retrieve external column information"
+                  name="AccessMode"
+                  typeConverter="Microsoft.SqlServer.Dts.Pipeline.DataReaderSourceAdapter+EnumToStringConverter">0</property>
+                <property
+                  dataType="System.String"
+                  name="UserComponentTypeName">Microsoft.DataReaderSourceAdapter</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Connections[IDbConnection]"
+                  connectionManagerID="{25F18216-6B02-437F-9FC0-74448DE46261}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[DESKTOP-L1SDHLQ.WideWorldImporters]"
+                  description="Managed connection manager"
+                  name="IDbConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output]"
+                  name="ADO NET Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[OrderLineID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[OrderLineID]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[OrderLineID]"
+                      name="OrderLineID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[OrderID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[OrderID]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[OrderID]"
+                      name="OrderID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[StockItemID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StockItemID]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[StockItemID]"
+                      name="StockItemID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[Description]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Description]"
+                      length="100"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[Description]"
+                      name="Description"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[PackageTypeID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PackageTypeID]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[PackageTypeID]"
+                      name="PackageTypeID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[Quantity]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Quantity]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[Quantity]"
+                      name="Quantity"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[UnitPrice]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[UnitPrice]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[UnitPrice]"
+                      name="UnitPrice"
+                      precision="18"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[TaxRate]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[TaxRate]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[TaxRate]"
+                      name="TaxRate"
+                      precision="18"
+                      scale="3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[PickedQuantity]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PickedQuantity]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[PickedQuantity]"
+                      name="PickedQuantity"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[PickingCompletedWhen]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PickingCompletedWhen]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[PickingCompletedWhen]"
+                      name="PickingCompletedWhen"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedBy]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LastEditedBy]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedBy]"
+                      name="LastEditedBy"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedWhen]"
+                      dataType="dbTimeStamp2"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LastEditedWhen]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedWhen]"
+                      name="LastEditedWhen"
+                      scale="7"
+                      truncationRowDisposition="FailComponent" />
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[OrderLineID]"
+                      dataType="i4"
+                      name="OrderLineID" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[OrderID]"
+                      dataType="i4"
+                      name="OrderID" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StockItemID]"
+                      dataType="i4"
+                      name="StockItemID" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Description]"
+                      dataType="wstr"
+                      length="100"
+                      name="Description" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PackageTypeID]"
+                      dataType="i4"
+                      name="PackageTypeID" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Quantity]"
+                      dataType="i4"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[UnitPrice]"
+                      dataType="numeric"
+                      name="UnitPrice"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[TaxRate]"
+                      dataType="numeric"
+                      name="TaxRate"
+                      precision="18"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PickedQuantity]"
+                      dataType="i4"
+                      name="PickedQuantity" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[PickingCompletedWhen]"
+                      dataType="dbTimeStamp2"
+                      name="PickingCompletedWhen"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LastEditedBy]"
+                      dataType="i4"
+                      name="LastEditedBy" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LastEditedWhen]"
+                      dataType="dbTimeStamp2"
+                      name="LastEditedWhen"
+                      scale="7" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output]"
+                  isErrorOut="true"
+                  name="ADO NET Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[OrderLineID]"
+                      dataType="i4"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[OrderLineID]"
+                      name="OrderLineID" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[OrderID]"
+                      dataType="i4"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[OrderID]"
+                      name="OrderID" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StockItemID]"
+                      dataType="i4"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StockItemID]"
+                      name="StockItemID" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Description]"
+                      dataType="wstr"
+                      length="100"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Description]"
+                      name="Description" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PackageTypeID]"
+                      dataType="i4"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PackageTypeID]"
+                      name="PackageTypeID" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Quantity]"
+                      dataType="i4"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Quantity]"
+                      name="Quantity" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[UnitPrice]"
+                      dataType="numeric"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[UnitPrice]"
+                      name="UnitPrice"
+                      precision="18"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[TaxRate]"
+                      dataType="numeric"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[TaxRate]"
+                      name="TaxRate"
+                      precision="18"
+                      scale="3" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PickedQuantity]"
+                      dataType="i4"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PickedQuantity]"
+                      name="PickedQuantity" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PickingCompletedWhen]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[PickingCompletedWhen]"
+                      name="PickingCompletedWhen"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastEditedBy]"
+                      dataType="i4"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastEditedBy]"
+                      name="LastEditedBy" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastEditedWhen]"
+                      dataType="dbTimeStamp2"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastEditedWhen]"
+                      name="LastEditedWhen"
+                      scale="7" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination"
+              componentClassID="Microsoft.FlatFileDestination"
+              contactInfo="Flat File Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Destination"
+              localeId="1033"
+              name="Flat File Destination"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether the data will overwrite or append to the destination file."
+                  name="Overwrite">true</property>
+                <property
+                  dataType="System.Null"
+                  description="Specifies the text to write to the destination file before any data is written."
+                  expressionType="Notify"
+                  name="Header" />
+                <property
+                  dataType="System.Boolean"
+                  description="When text qualifier is enabled, specifies whether the text qualifier in the data written to the destination file will be escaped or not."
+                  name="EscapeQualifier">false</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[File To Export - Flat File Connection Manager (FFCM)]"
+                  connectionManagerRefId="Package.ConnectionManagers[File To Export - Flat File Connection Manager (FFCM)]"
+                  name="FlatFileConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input]"
+                  hasSideEffects="true"
+                  name="Flat File Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[OrderLineID]"
+                      cachedDataType="i4"
+                      cachedName="OrderLineID"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderLineID]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[OrderLineID]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[OrderID]"
+                      cachedDataType="i4"
+                      cachedName="OrderID"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderID]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[OrderID]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[StockItemID]"
+                      cachedDataType="i4"
+                      cachedName="StockItemID"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StockItemID]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[StockItemID]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[Description]"
+                      cachedDataType="wstr"
+                      cachedLength="100"
+                      cachedName="Description"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Description]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[Description]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[PackageTypeID]"
+                      cachedDataType="i4"
+                      cachedName="PackageTypeID"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PackageTypeID]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[PackageTypeID]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[Quantity]"
+                      cachedDataType="i4"
+                      cachedName="Quantity"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Quantity]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[Quantity]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[UnitPrice]"
+                      cachedDataType="numeric"
+                      cachedName="UnitPrice"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UnitPrice]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[UnitPrice]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[TaxRate]"
+                      cachedDataType="numeric"
+                      cachedName="TaxRate"
+                      cachedPrecision="18"
+                      cachedScale="3"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TaxRate]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[TaxRate]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[PickedQuantity]"
+                      cachedDataType="i4"
+                      cachedName="PickedQuantity"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PickedQuantity]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[PickedQuantity]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[PickingCompletedWhen]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="PickingCompletedWhen"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PickingCompletedWhen]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[PickingCompletedWhen]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[LastEditedBy]"
+                      cachedDataType="i4"
+                      cachedName="LastEditedBy"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastEditedBy]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedBy]" />
+                    <inputColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].Columns[LastEditedWhen]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="LastEditedWhen"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastEditedWhen]"
+                      lineageId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedWhen]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Quantity]"
+                      dataType="i4"
+                      name="Quantity" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[UnitPrice]"
+                      dataType="numeric"
+                      name="UnitPrice"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[TaxRate]"
+                      dataType="numeric"
+                      name="TaxRate"
+                      precision="18"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PickedQuantity]"
+                      dataType="i4"
+                      name="PickedQuantity" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PickingCompletedWhen]"
+                      dataType="dbTimeStamp2"
+                      name="PickingCompletedWhen"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastEditedBy]"
+                      dataType="i4"
+                      name="LastEditedBy" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[LastEditedWhen]"
+                      dataType="dbTimeStamp2"
+                      name="LastEditedWhen"
+                      scale="7" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderLineID]"
+                      dataType="i4"
+                      name="OrderLineID" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[OrderID]"
+                      dataType="i4"
+                      name="OrderID" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[StockItemID]"
+                      dataType="i4"
+                      name="StockItemID" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[Description]"
+                      dataType="wstr"
+                      length="100"
+                      name="Description" />
+                    <externalMetadataColumn
+                      refId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input].ExternalColumns[PackageTypeID]"
+                      dataType="i4"
+                      name="PackageTypeID" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\Export Flat File _ Data Flow Task (DFT).Paths[ADO NET Source Output]"
+              endId="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination.Inputs[Flat File Destination Input]"
+              name="ADO NET Source Output"
+              startId="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source.Outputs[ADO NET Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="261.6,41.6"
+          Id="Package\Export Flat File _ Data Flow Task (DFT)"
+          TopLeft="266.666652096643,111.799999222557" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Export Flat File _ Data Flow Task (DFT)">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="244,41.6"
+          Id="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source"
+          TopLeft="393.333311842548,33.799999764959" />
+        <NodeLayout
+          Size="170.4,41.6"
+          Id="Package\Export Flat File _ Data Flow Task (DFT)\Flat File Destination"
+          TopLeft="433.333309657045,197.599998625914" />
+        <EdgeLayout
+          Id="Package\Export Flat File _ Data Flow Task (DFT).Paths[ADO NET Source Output]"
+          TopLeft="516.933310749796,75.399999764959">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,122.199998860955"
+              Start="0,0"
+              End="0,114.699998860955">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,114.699998860955" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Export Flat File _ Data Flow Task (DFT)\DB Connection  _ ADO NET Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

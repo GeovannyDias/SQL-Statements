@@ -11,19 +11,19 @@
   DTS:LocaleID="1033"
   DTS:ObjectName="Package"
   DTS:PackageType="5"
-  DTS:VersionBuild="3"
-  DTS:VersionGUID="{7CF7A269-9D05-48EF-A281-AEA780C6F02F}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{6DD61667-3C68-4D40-BFCC-A7D4A298929A}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
     <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[BPUIO01607295L.WideWorldImporters]"
+      DTS:refId="Package.ConnectionManagers[DESKTOP-L1SDHLQ.WideWorldImporters]"
       DTS:CreationName="ADO.NET:System.Data.SqlClient.SqlConnection, System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
-      DTS:DTSID="{241709D2-FA48-4215-86A2-881AA5B5F629}"
-      DTS:ObjectName="BPUIO01607295L.WideWorldImporters">
+      DTS:DTSID="{B25FDE39-7BB2-4085-B118-898DC1B7687E}"
+      DTS:ObjectName="DESKTOP-L1SDHLQ.WideWorldImporters">
       <DTS:ObjectData>
         <DTS:ConnectionManager
-          DTS:ConnectionString="Data Source=BPUIO01607295L;Initial Catalog=WideWorldImporters;Integrated Security=True;Application Name=SSIS-Package-{241709D2-FA48-4215-86A2-881AA5B5F629}BPUIO01607295L.WideWorldImporters;" />
+          DTS:ConnectionString="Data Source=DESKTOP-L1SDHLQ;Initial Catalog=WideWorldImporters;Integrated Security=True;Application Name=SSIS-Package-{B25FDE39-7BB2-4085-B118-898DC1B7687E}DESKTOP-L1SDHLQ.WideWorldImporters;" />
       </DTS:ObjectData>
     </DTS:ConnectionManager>
     <DTS:ConnectionManager
@@ -42,48 +42,110 @@
           DTS:RowDelimiter=""
           DTS:TextQualifier="_x003C_none_x003E_"
           DTS:CodePage="1252"
-          DTS:ConnectionString="D:\Usuarios\jdiasama\Desktop\ETL\Geo\03IntegrationServicesProject-DbToFile\FileExport\20230104_FileExport.csv">
+          DTS:ConnectionString="D:\Developer_Studio\Web\DB\SQL-Statements\ETLs\Delete\03IntegrationServicesProject-DbToFile\FileExport\20230105_FileExport.csv">
           <DTS:FlatFileColumns>
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="CityID"
-              DTS:DTSID="{7D0F5677-4968-48C2-9438-3229C4E1134A}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:MaximumWidth="50"
-              DTS:DataType="130"
-              DTS:TextQualified="True"
-              DTS:ObjectName="CityName"
-              DTS:DTSID="{22B208F2-7699-4CB8-BAAD-A54526CF0DF3}"
+              DTS:ObjectName="SpecialDealID"
+              DTS:DTSID="{980D1C99-5C18-4FC7-9BF1-5F112DF30AA0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
               DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="StateProvinceID"
-              DTS:DTSID="{04CFA77C-C376-4848-A309-863F4CC64960}"
+              DTS:ObjectName="StockItemID"
+              DTS:DTSID="{A5500D53-9ADA-4C9A-ADB6-2BC20D5730C0}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="301"
+              DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="Location"
-              DTS:DTSID="{815091AF-4125-45BA-B0DC-5CFD9384B6EA}"
+              DTS:ObjectName="CustomerID"
+              DTS:DTSID="{FE2DF699-6732-4E99-8029-BD04BB0453F3}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
               DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="20"
+              DTS:DataType="3"
               DTS:TextQualified="True"
-              DTS:ObjectName="LatestRecordedPopulation"
-              DTS:DTSID="{5902F30D-7E14-45DF-AFC4-3D174723987C}"
+              DTS:ObjectName="BuyingGroupID"
+              DTS:DTSID="{31872057-2E01-4069-B8E4-5F51E4550F1B}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="CustomerCategoryID"
+              DTS:DTSID="{0BA06954-6743-494A-A703-A21BD88ED29E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StockGroupID"
+              DTS:DTSID="{9BCBF030-58F2-4A48-8A1E-A9FD832E3C63}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="30"
+              DTS:DataType="130"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DealDescription"
+              DTS:DTSID="{E969DC0A-5341-4F1D-90DC-609BBE6F79BB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="StartDate"
+              DTS:DTSID="{81DEE552-B2CC-4513-BF42-E7E4F5D1EA9A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="133"
+              DTS:TextQualified="True"
+              DTS:ObjectName="EndDate"
+              DTS:DTSID="{81A2719D-F725-4AF4-9C0D-2CD1BD9C13C4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DiscountAmount"
+              DTS:DTSID="{40C7603D-ED17-43E9-94C4-6AFA4B25E176}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="DiscountPercentage"
+              DTS:DTSID="{F1B4208A-848D-4D3C-A06B-7703FF8808A1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="131"
+              DTS:DataPrecision="18"
+              DTS:DataScale="2"
+              DTS:TextQualified="True"
+              DTS:ObjectName="UnitPrice"
+              DTS:DTSID="{B5FF1D0B-D09C-48CA-A583-C3B192B66E88}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -91,16 +153,7 @@
               DTS:DataType="3"
               DTS:TextQualified="True"
               DTS:ObjectName="LastEditedBy"
-              DTS:DTSID="{2D396033-B06A-4F07-A1B3-3E1EC1EA7E70}"
-              DTS:CreationName="" />
-            <DTS:FlatFileColumn
-              DTS:ColumnType="Delimited"
-              DTS:ColumnDelimiter="_x002C_"
-              DTS:DataType="304"
-              DTS:DataScale="7"
-              DTS:TextQualified="True"
-              DTS:ObjectName="ValidFrom"
-              DTS:DTSID="{5068A66B-C03F-490A-953C-CE4CB52C764C}"
+              DTS:DTSID="{EAD6AF60-7A9E-4513-A719-7BB15D3AE1DA}"
               DTS:CreationName="" />
             <DTS:FlatFileColumn
               DTS:ColumnType="Delimited"
@@ -108,8 +161,8 @@
               DTS:DataType="304"
               DTS:DataScale="7"
               DTS:TextQualified="True"
-              DTS:ObjectName="ValidTo"
-              DTS:DTSID="{5B9BB85E-078D-4E0B-87E7-E91E0F994CD9}"
+              DTS:ObjectName="LastEditedWhen"
+              DTS:DTSID="{6A1CA9AD-A91D-49D4-BD8C-41FE8239A3A7}"
               DTS:CreationName="" />
           </DTS:FlatFileColumns>
         </DTS:ConnectionManager>
@@ -126,18 +179,18 @@
       DTS:Namespace="User"
       DTS:ObjectName="FileName">
       <DTS:VariableValue
-        DTS:DataType="8">20230104_FileExport.csv</DTS:VariableValue>
+        DTS:DataType="8">20230105_FileExport.csv</DTS:VariableValue>
     </DTS:Variable>
     <DTS:Variable
       DTS:CreationName=""
       DTS:DTSID="{28BB07AB-3195-4FD7-9704-F4A3668485C1}"
       DTS:EvaluateAsExpression="True"
-      DTS:Expression="&quot;D:\\Usuarios\\jdiasama\\Desktop\\ETL\\Geo\\03IntegrationServicesProject-DbToFile\\FileExport&quot;"
+      DTS:Expression="&quot;D:\\Developer_Studio\\Web\\DB\\SQL-Statements\\ETLs\\Delete\\03IntegrationServicesProject-DbToFile\\FileExport&quot;"
       DTS:IncludeInDebugDump="2345"
       DTS:Namespace="User"
       DTS:ObjectName="SourceFolder">
       <DTS:VariableValue
-        DTS:DataType="8">D:\Usuarios\jdiasama\Desktop\ETL\Geo\03IntegrationServicesProject-DbToFile\FileExport</DTS:VariableValue>
+        DTS:DataType="8">D:\Developer_Studio\Web\DB\SQL-Statements\ETLs\Delete\03IntegrationServicesProject-DbToFile\FileExport</DTS:VariableValue>
     </DTS:Variable>
   </DTS:Variables>
   <DTS:Executables>
@@ -183,7 +236,7 @@
                   description="The Source database table name."
                   expressionType="Notify"
                   name="TableOrViewName"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"Application"."Cities"</property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">"Sales"."SpecialDeals"</property>
                 <property
                   dataType="System.Int32"
                   description="Specify the mode to retrieve external column information"
@@ -196,8 +249,8 @@
               <connections>
                 <connection
                   refId="Package\Tarea Flujo de datos\ADO NET Source.Connections[IDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[BPUIO01607295L.WideWorldImporters]"
-                  connectionManagerRefId="Package.ConnectionManagers[BPUIO01607295L.WideWorldImporters]"
+                  connectionManagerID="Package.ConnectionManagers[DESKTOP-L1SDHLQ.WideWorldImporters]"
+                  connectionManagerRefId="Package.ConnectionManagers[DESKTOP-L1SDHLQ.WideWorldImporters]"
                   description="Managed connection manager"
                   name="IDbConnection" />
               </connections>
@@ -207,50 +260,119 @@
                   name="ADO NET Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CityID]"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[SpecialDealID]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CityID]"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CityID]"
-                      name="CityID"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[SpecialDealID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[SpecialDealID]"
+                      name="SpecialDealID"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CityName]"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StockItemID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StockItemID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StockItemID]"
+                      name="StockItemID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CustomerID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CustomerID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CustomerID]"
+                      name="CustomerID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[BuyingGroupID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[BuyingGroupID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[BuyingGroupID]"
+                      name="BuyingGroupID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CustomerCategoryID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CustomerCategoryID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CustomerCategoryID]"
+                      name="CustomerCategoryID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StockGroupID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StockGroupID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StockGroupID]"
+                      name="StockGroupID"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealDescription]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CityName]"
-                      length="50"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CityName]"
-                      name="CityName"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DealDescription]"
+                      length="30"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealDescription]"
+                      name="DealDescription"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StateProvinceID]"
-                      dataType="i4"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StartDate]"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StateProvinceID]"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StateProvinceID]"
-                      name="StateProvinceID"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StartDate]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StartDate]"
+                      name="StartDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[Location]"
-                      dataType="image"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[EndDate]"
+                      dataType="dbDate"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Location]"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[Location]"
-                      name="Location"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[EndDate]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[EndDate]"
+                      name="EndDate"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[LatestRecordedPopulation]"
-                      dataType="i8"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[DiscountAmount]"
+                      dataType="numeric"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LatestRecordedPopulation]"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[LatestRecordedPopulation]"
-                      name="LatestRecordedPopulation"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DiscountAmount]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[DiscountAmount]"
+                      name="DiscountAmount"
+                      precision="18"
+                      scale="2"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[DiscountPercentage]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DiscountPercentage]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[DiscountPercentage]"
+                      name="DiscountPercentage"
+                      precision="18"
+                      scale="3"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[UnitPrice]"
+                      dataType="numeric"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[UnitPrice]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[UnitPrice]"
+                      name="UnitPrice"
+                      precision="18"
+                      scale="2"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedBy]"
@@ -262,62 +384,81 @@
                       name="LastEditedBy"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[ValidFrom]"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedWhen]"
                       dataType="dbTimeStamp2"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ValidFrom]"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[ValidFrom]"
-                      name="ValidFrom"
-                      scale="7"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[ValidTo]"
-                      dataType="dbTimeStamp2"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ValidTo]"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[ValidTo]"
-                      name="ValidTo"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LastEditedWhen]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedWhen]"
+                      name="LastEditedWhen"
                       scale="7"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CityID]"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[SpecialDealID]"
                       dataType="i4"
-                      name="CityID" />
+                      name="SpecialDealID" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CityName]"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StockItemID]"
+                      dataType="i4"
+                      name="StockItemID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CustomerID]"
+                      dataType="i4"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[BuyingGroupID]"
+                      dataType="i4"
+                      name="BuyingGroupID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[CustomerCategoryID]"
+                      dataType="i4"
+                      name="CustomerCategoryID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StockGroupID]"
+                      dataType="i4"
+                      name="StockGroupID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DealDescription]"
                       dataType="wstr"
-                      length="50"
-                      name="CityName" />
+                      length="30"
+                      name="DealDescription" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StateProvinceID]"
-                      dataType="i4"
-                      name="StateProvinceID" />
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[StartDate]"
+                      dataType="dbDate"
+                      name="StartDate" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[Location]"
-                      dataType="image"
-                      name="Location" />
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[EndDate]"
+                      dataType="dbDate"
+                      name="EndDate" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LatestRecordedPopulation]"
-                      dataType="i8"
-                      name="LatestRecordedPopulation" />
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DiscountAmount]"
+                      dataType="numeric"
+                      name="DiscountAmount"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[DiscountPercentage]"
+                      dataType="numeric"
+                      name="DiscountPercentage"
+                      precision="18"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[UnitPrice]"
+                      dataType="numeric"
+                      name="UnitPrice"
+                      precision="18"
+                      scale="2" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LastEditedBy]"
                       dataType="i4"
                       name="LastEditedBy" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ValidFrom]"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[LastEditedWhen]"
                       dataType="dbTimeStamp2"
-                      name="ValidFrom"
-                      scale="7" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].ExternalColumns[ValidTo]"
-                      dataType="dbTimeStamp2"
-                      name="ValidTo"
+                      name="LastEditedWhen"
                       scale="7" />
                   </externalMetadataColumns>
                 </output>
@@ -327,47 +468,82 @@
                   name="ADO NET Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CityID]"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[SpecialDealID]"
                       dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CityID]"
-                      name="CityID" />
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[SpecialDealID]"
+                      name="SpecialDealID" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CityName]"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StockItemID]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StockItemID]"
+                      name="StockItemID" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CustomerID]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CustomerID]"
+                      name="CustomerID" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[BuyingGroupID]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[BuyingGroupID]"
+                      name="BuyingGroupID" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CustomerCategoryID]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CustomerCategoryID]"
+                      name="CustomerCategoryID" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StockGroupID]"
+                      dataType="i4"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StockGroupID]"
+                      name="StockGroupID" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DealDescription]"
                       dataType="wstr"
-                      length="50"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[CityName]"
-                      name="CityName" />
+                      length="30"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DealDescription]"
+                      name="DealDescription" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StateProvinceID]"
-                      dataType="i4"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StateProvinceID]"
-                      name="StateProvinceID" />
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StartDate]"
+                      dataType="dbDate"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[StartDate]"
+                      name="StartDate" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Location]"
-                      dataType="image"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[Location]"
-                      name="Location" />
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[EndDate]"
+                      dataType="dbDate"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[EndDate]"
+                      name="EndDate" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LatestRecordedPopulation]"
-                      dataType="i8"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LatestRecordedPopulation]"
-                      name="LatestRecordedPopulation" />
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DiscountAmount]"
+                      dataType="numeric"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DiscountAmount]"
+                      name="DiscountAmount"
+                      precision="18"
+                      scale="2" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DiscountPercentage]"
+                      dataType="numeric"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[DiscountPercentage]"
+                      name="DiscountPercentage"
+                      precision="18"
+                      scale="3" />
+                    <outputColumn
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[UnitPrice]"
+                      dataType="numeric"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[UnitPrice]"
+                      name="UnitPrice"
+                      precision="18"
+                      scale="2" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastEditedBy]"
                       dataType="i4"
                       lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastEditedBy]"
                       name="LastEditedBy" />
                     <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ValidFrom]"
+                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastEditedWhen]"
                       dataType="dbTimeStamp2"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ValidFrom]"
-                      name="ValidFrom"
-                      scale="7" />
-                    <outputColumn
-                      refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ValidTo]"
-                      dataType="dbTimeStamp2"
-                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ValidTo]"
-                      name="ValidTo"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[LastEditedWhen]"
+                      name="LastEditedWhen"
                       scale="7" />
                     <outputColumn
                       refId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Error Output].Columns[ErrorCode]"
@@ -421,42 +597,165 @@
                   refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano]"
                   hasSideEffects="true"
                   name="Entrada de destino de archivo plano">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[SpecialDealID]"
+                      cachedDataType="i4"
+                      cachedName="SpecialDealID"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[SpecialDealID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[SpecialDealID]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[StockItemID]"
+                      cachedDataType="i4"
+                      cachedName="StockItemID"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[StockItemID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StockItemID]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[CustomerID]"
+                      cachedDataType="i4"
+                      cachedName="CustomerID"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[CustomerID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CustomerID]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[BuyingGroupID]"
+                      cachedDataType="i4"
+                      cachedName="BuyingGroupID"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[BuyingGroupID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[BuyingGroupID]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[CustomerCategoryID]"
+                      cachedDataType="i4"
+                      cachedName="CustomerCategoryID"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[CustomerCategoryID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[CustomerCategoryID]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[StockGroupID]"
+                      cachedDataType="i4"
+                      cachedName="StockGroupID"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[StockGroupID]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StockGroupID]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[DealDescription]"
+                      cachedDataType="wstr"
+                      cachedLength="30"
+                      cachedName="DealDescription"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[DealDescription]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[DealDescription]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[StartDate]"
+                      cachedDataType="dbDate"
+                      cachedName="StartDate"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[StartDate]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[StartDate]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[EndDate]"
+                      cachedDataType="dbDate"
+                      cachedName="EndDate"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[EndDate]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[EndDate]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[DiscountAmount]"
+                      cachedDataType="numeric"
+                      cachedName="DiscountAmount"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[DiscountAmount]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[DiscountAmount]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[DiscountPercentage]"
+                      cachedDataType="numeric"
+                      cachedName="DiscountPercentage"
+                      cachedPrecision="18"
+                      cachedScale="3"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[DiscountPercentage]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[DiscountPercentage]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[UnitPrice]"
+                      cachedDataType="numeric"
+                      cachedName="UnitPrice"
+                      cachedPrecision="18"
+                      cachedScale="2"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[UnitPrice]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[UnitPrice]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[LastEditedBy]"
+                      cachedDataType="i4"
+                      cachedName="LastEditedBy"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[LastEditedBy]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedBy]" />
+                    <inputColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].Columns[LastEditedWhen]"
+                      cachedDataType="dbTimeStamp2"
+                      cachedName="LastEditedWhen"
+                      cachedScale="7"
+                      externalMetadataColumnId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[LastEditedWhen]"
+                      lineageId="Package\Tarea Flujo de datos\ADO NET Source.Outputs[ADO NET Source Output].Columns[LastEditedWhen]" />
+                  </inputColumns>
                   <externalMetadataColumns
                     isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[CityID]"
-                      dataType="i4"
-                      name="CityID" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[CityName]"
-                      dataType="wstr"
-                      length="50"
-                      name="CityName" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[StateProvinceID]"
-                      dataType="i4"
-                      name="StateProvinceID" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[Location]"
-                      dataType="image"
-                      name="Location" />
-                    <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[LatestRecordedPopulation]"
-                      dataType="i8"
-                      name="LatestRecordedPopulation" />
                     <externalMetadataColumn
                       refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[LastEditedBy]"
                       dataType="i4"
                       name="LastEditedBy" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[ValidFrom]"
-                      dataType="dbTimeStamp2"
-                      name="ValidFrom"
-                      scale="7" />
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[SpecialDealID]"
+                      dataType="i4"
+                      name="SpecialDealID" />
                     <externalMetadataColumn
-                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[ValidTo]"
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[StockItemID]"
+                      dataType="i4"
+                      name="StockItemID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[CustomerID]"
+                      dataType="i4"
+                      name="CustomerID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[BuyingGroupID]"
+                      dataType="i4"
+                      name="BuyingGroupID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[CustomerCategoryID]"
+                      dataType="i4"
+                      name="CustomerCategoryID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[StockGroupID]"
+                      dataType="i4"
+                      name="StockGroupID" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[DealDescription]"
+                      dataType="wstr"
+                      length="30"
+                      name="DealDescription" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[StartDate]"
+                      dataType="dbDate"
+                      name="StartDate" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[EndDate]"
+                      dataType="dbDate"
+                      name="EndDate" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[DiscountAmount]"
+                      dataType="numeric"
+                      name="DiscountAmount"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[DiscountPercentage]"
+                      dataType="numeric"
+                      name="DiscountPercentage"
+                      precision="18"
+                      scale="3" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[UnitPrice]"
+                      dataType="numeric"
+                      name="UnitPrice"
+                      precision="18"
+                      scale="2" />
+                    <externalMetadataColumn
+                      refId="Package\Tarea Flujo de datos\Destino de archivo plano.Inputs[Entrada de destino de archivo plano].ExternalColumns[LastEditedWhen]"
                       dataType="dbTimeStamp2"
-                      name="ValidTo"
+                      name="LastEditedWhen"
                       scale="7" />
                   </externalMetadataColumns>
                 </input>

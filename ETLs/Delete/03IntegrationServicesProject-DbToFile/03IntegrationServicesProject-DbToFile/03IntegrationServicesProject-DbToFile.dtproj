@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">BPUIO01607295L</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdkUv52Nzs06BB0fD/3O10QAAAAACAAAAAAADZgAAwAAAABAAAACvNyrBUMW3ynbnpXOvtW3eAAAAAASAAACgAAAAEAAAAEOXzMpErhvKU4o14N7CeImIAAAAhFfVqmg2/ni1PU2WfEG0bjV/e6gXlK1cCXt+r96AZJ8DXqGIXUDzbVNi0k+29QsrGped+hUBUK6l0+zqtS9XVU8dcTEwyLe8PPoVSBb/FuJFJcWtk2HrYgs8EDiGUQT5f4LQCPy96fvRO3uxkQDdkG97ynIDrfDLq58kku898oA9ZXpnlKS4rBQAAACcFPLxv+LmC6duPekT83RWy0KkIQ==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAW4OaRLNmbkePwklsUaEuVgAAAAACAAAAAAAQZgAAAAEAACAAAAAoLegIKKLmm66fxN5+ch63Q+28bV3QmjGCo93M+LaiUgAAAAAOgAAAAAIAACAAAACWKMNzvmRP0kauLvgNDWDh8SW3szmegze7YHo+D/8BoJAAAAAMz+uH5GfFmO3FBhr3imGNWjO2b8Fhuxq11bOodUKUUw2he1noLMSfwyIPoF9N2logfy2Z46WT5mbH1hGm2eiSG2SA+sCMT8/mwgbfZLTuUf2Zf8GQm/aNioyqEn8+7o1yCMijQINs+f3tP+u8s6WeG1clAntPHUBJkphwVeVFAZtp56GPZ2XnrQ67333MHLhAAAAApzLulB/5k7bqpcXwYzBXOGXaq3Esz4DQP44vv2STTGx4IDTcUJFPLw6lTkzJKJQYdz9tc+mSpaCO5K1A6dd7tg==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -42,17 +42,17 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">3</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">7</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{7CF7A269-9D05-48EF-A281-AEA780C6F02F}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{0F515A3B-437C-4815-A9AC-402FADD76E1B}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
                 <SSIS:Property SSIS:Name="ProtectionLevel">1</SSIS:Property>
               </SSIS:Properties>
               <SSIS:Parameters>
-                <SSIS:Parameter SSIS:Name="CM.BPUIO01607295L.WideWorldImporters.ConnectByProxy">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-L1SDHLQ.WideWorldImporters.ConnectByProxy">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -67,7 +67,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BPUIO01607295L.WideWorldImporters.ConnectionString">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-L1SDHLQ.WideWorldImporters.ConnectionString">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -78,11 +78,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">Data Source=BPUIO01607295L;Initial Catalog=WideWorldImporters;Integrated Security=True;Application Name=SSIS-Package-{241709D2-FA48-4215-86A2-881AA5B5F629}BPUIO01607295L.WideWorldImporters;</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">Data Source=DESKTOP-L1SDHLQ;Initial Catalog=WideWorldImporters;Integrated Security=True;Application Name=SSIS-Package-{B25FDE39-7BB2-4085-B118-898DC1B7687E}DESKTOP-L1SDHLQ.WideWorldImporters;</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BPUIO01607295L.WideWorldImporters.ConnectUsingManagedIdentity">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-L1SDHLQ.WideWorldImporters.ConnectUsingManagedIdentity">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -97,7 +97,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BPUIO01607295L.WideWorldImporters.InitialCatalog">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-L1SDHLQ.WideWorldImporters.InitialCatalog">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -112,7 +112,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BPUIO01607295L.WideWorldImporters.Password">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-L1SDHLQ.WideWorldImporters.Password">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -126,7 +126,7 @@
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BPUIO01607295L.WideWorldImporters.RetainSameConnection">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-L1SDHLQ.WideWorldImporters.RetainSameConnection">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -141,7 +141,7 @@
                     <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BPUIO01607295L.WideWorldImporters.ServerName">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-L1SDHLQ.WideWorldImporters.ServerName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -152,11 +152,11 @@
                     <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                     <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                    <SSIS:Property SSIS:Name="Value">BPUIO01607295L</SSIS:Property>
+                    <SSIS:Property SSIS:Name="Value">DESKTOP-L1SDHLQ</SSIS:Property>
                     <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
                   </SSIS:Properties>
                 </SSIS:Parameter>
-                <SSIS:Parameter SSIS:Name="CM.BPUIO01607295L.WideWorldImporters.UserName">
+                <SSIS:Parameter SSIS:Name="CM.DESKTOP-L1SDHLQ.WideWorldImporters.UserName">
                   <SSIS:Properties>
                     <SSIS:Property SSIS:Name="ID">
                     </SSIS:Property>
@@ -377,7 +377,13 @@
         <LinkedAzureSSISIR />
         <LinkedAzureStorage />
         <RemoteExecutionFolder />
-        <ParameterConfigurationValues />
+        <ParameterConfigurationValues>
+          <ConfigurationSetting>
+            <Id>LastModifiedTime</Id>
+            <Name>LastModifiedTime</Name>
+            <Value xsi:type="xsd:dateTime">2023-01-05T23:22:55.1003964Z</Value>
+          </ConfigurationSetting>
+        </ParameterConfigurationValues>
       </Options>
     </Configuration>
   </Configurations>
